@@ -29,15 +29,15 @@ public class Yatzy1 {
         return sumDicewithSameGivenNumber(3);
     }
 
-    public int fours(int[] diceRoll) {
+    public int fours() {
         return sumDicewithSameGivenNumber(4);
     }
 
-    public int fives(int[] diceRoll) {
+    public int fives() {
         return sumDicewithSameGivenNumber(5);
     }
 
-    public int sixes(int[] diceRoll) {
+    public int sixes() {
         return sumDicewithSameGivenNumber(6);
     }
 
