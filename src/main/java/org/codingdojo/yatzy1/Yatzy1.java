@@ -18,32 +18,32 @@ public class Yatzy1 {
     }
 
     public int ones() {
-        return sumDicewithSameGivenNumber(dice, 1);
+        return sumDicewithSameGivenNumber(1);
     }
 
     public int twos() {
-        return sumDicewithSameGivenNumber(dice, 2);
+        return sumDicewithSameGivenNumber(2);
     }
 
     public int threes() {
-        return sumDicewithSameGivenNumber(dice, 3);
+        return sumDicewithSameGivenNumber(3);
     }
 
-    public static int fours(int[] diceRoll) {
-        return sumDicewithSameGivenNumber(diceRoll, 4);
+    public int fours(int[] diceRoll) {
+        return sumDicewithSameGivenNumber(4);
     }
 
-    public static int fives(int[] diceRoll) {
-        return sumDicewithSameGivenNumber(diceRoll, 5);
+    public int fives(int[] diceRoll) {
+        return sumDicewithSameGivenNumber(5);
     }
 
-    public static int sixes(int[] diceRoll) {
-        return sumDicewithSameGivenNumber(diceRoll, 6);
+    public int sixes(int[] diceRoll) {
+        return sumDicewithSameGivenNumber(6);
     }
 
-    private static int sumDicewithSameGivenNumber(final int[] diceRoll, final int number)
+    private int sumDicewithSameGivenNumber(final int number)
     {
-        return Arrays.stream(diceRoll)
+        return Arrays.stream(dice)
                 .filter(d -> d == number)
                 .sum();
     }
